@@ -4,7 +4,7 @@ date: 2023-02-21 16:22:47 +07:00
 modified: 2023-02-23 13:23:00 +07:00
 tags: [R, statistics]
 description:
-image: "./dutchboys_plot.JPG"
+image: "/dutchboys_plot.JPG"
 ---
 
 <em>Centile estimation</em> mencakup metode untuk memprediksi pertumbuhan manusia terhadap usia. Estimasi standar kurva <em>centile</em> terdiri dua variabel:
@@ -169,7 +169,7 @@ ditribusi paling baik   : BCTo (GAIC k=3)
 Output kurva percentile:
 
 <figure>
-<img src="./centile_curve_BCTo.JPG">
+<img src="/centile_curve_BCTo.JPG">
 <figcaption>Output kurva percentile dengan metode lms</figcaption>
 </figure>
 
