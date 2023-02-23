@@ -360,6 +360,8 @@ wp(m0, xvar=dutchboys$age, n.inter=9)
 ```R
 centiles(m0)
 ```
+
+
 <hr>
 
 References
