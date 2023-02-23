@@ -67,7 +67,7 @@ plot(hc~age, data=dutchboys, pch=15, cex=0.5, col=gray(0.5), xlab='x', ylab='y')
 output:
 
 <figure>
-<img src="./plot1.png">
+<img src="img/plot1.png">
 <figcaption>Hasil plotting menggunakan fungsi plot R</figcaption>
 </figure>
 
