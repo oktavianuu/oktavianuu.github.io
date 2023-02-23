@@ -54,10 +54,7 @@ ggplot(dutchboys, aes(x=age, y=hc)) +
 ```
 Pastikan hasil plotting seperti gambar berikut:
 
-<figure>
-<img src="./img/dutchboys_plot.jpg">
-<figcaption>Hasil plotting dataset menggunakan ggplot2</figcaption>
-</figure>
+![Hasil plotting dataset menggunakan ggplot2](./img/dutchboys_plot.jpg)
 
 
 atau dapat juga menggunakan fungsi R berikut:
