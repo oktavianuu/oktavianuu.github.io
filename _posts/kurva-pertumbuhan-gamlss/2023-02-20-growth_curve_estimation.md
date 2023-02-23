@@ -360,6 +360,8 @@ wp(m0, xvar=dutchboys$age, n.inter=9)
 ```R
 centiles(m0)
 ```
+<hr>
 
 References
+
 ~ Stasinopoulos, M. D., Rigby, R. A., Heller, G. Z., Voudouris, V.,, Bastiani, F. D. (2017). Flexible regression and smoothing : using GAMLSS in R. Chapman and Hall/CRC . ISBN: 9781138197909 1138197904 
