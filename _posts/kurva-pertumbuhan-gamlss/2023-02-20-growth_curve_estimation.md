@@ -4,7 +4,7 @@ date: 2023-02-21 16:22:47 +07:00
 modified: 2023-02-23 13:23:00 +07:00
 tags: [R, statistics]
 description:
-image: "/kurva-pertumbuhan-gamlss/dutchboys_plot.JPG"
+image: "./dutchboys_plot.JPG"
 ---
 
 <em>Centile estimation</em> mencakup metode untuk memprediksi pertumbuhan manusia terhadap usia. Estimasi standar kurva <em>centile</em> terdiri dua variabel:
@@ -55,7 +55,7 @@ ggplot(dutchboys, aes(x=age, y=hc)) +
 Pastikan hasil plotting seperti gambar berikut:
 
 <figure>
-<img src="/kurva-pertumbuhan-gamlss/dutchboys_plot.JPG">
+<img src="./dutchboys_plot.JPG">
 <figcaption>Hasil plotting dataset menggunakan ggplot2</figcaption>
 </figure>
 
@@ -67,7 +67,7 @@ plot(hc~age, data=dutchboys, pch=15, cex=0.5, col=gray(0.5), xlab='x', ylab='y')
 output:
 
 <figure>
-<img src="/kurva-pertumbuhan-gamlss/plot1.png">
+<img src="./plot1.png">
 <figcaption>Hasil plotting menggunakan fungsi plot R</figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ ggplot(dutchboys1, aes(x=age, y=hc)) +
 Output:
 
 <figure>
-<img src="/kurva-pertumbuhan-gamlss/random_observations.png">
+<img src="./random_observations.png">
 <figcaption>Hasil plotting 1000 sampel menggunakan ggplot2</figcaption>
 </figure>
 
@@ -100,7 +100,7 @@ title("sebaran 1000 random data")
 output:
 
 <figure>
-<img src="/kurva-pertumbuhan-gamlss/plotR2.png" alt="">
+<img src="./plotR2.png" alt="">
 <figcaption>Hasil plotting 1000 samppel menggunakan fungsi R</figcaption>  
 </figure>
 
@@ -169,7 +169,7 @@ ditribusi paling baik   : BCTo (GAIC k=3)
 Output kurva percentile:
 
 <figure>
-<img src="/kurva-pertumbuhan-gamlss/centile_curve_BCTo.JPG">
+<img src="./centile_curve_BCTo.JPG">
 <figcaption>Output kurva percentile dengan metode lms</figcaption>
 </figure>
 
