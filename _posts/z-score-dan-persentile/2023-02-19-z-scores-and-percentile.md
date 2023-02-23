@@ -1,5 +1,5 @@
 ---
-title: z-scores dan persentile
+title: z-scores dan persentil
 date: 2023-02-19 19:54:00 +07:00
 modified:
 tags: [R, programming, statistics]
