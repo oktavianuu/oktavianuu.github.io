@@ -53,7 +53,7 @@ ggplot(dutchboys, aes(x=age, y=hc)) +
 ```
 Pastikan hasil plotting seperti gambar berikut:
 
-![dutchboys plotting](https://github.com/oktavianuu/oktavianuu.github.io/ablob/main/assets/img/dutchboys_plot.jpg "Hasil plotting dataset menggunakan ggplot2")
+![dutchboys plotting](./dutchboys_plot.jpg "Hasil plotting dataset menggunakan ggplot2")
 
 atau dapat juga menggunakan fungsi R berikut:
 ```R
@@ -61,10 +61,7 @@ plot(hc~age, data=dutchboys, pch=15, cex=0.5, col=gray(0.5), xlab='x', ylab='y')
 ```
 output:
 
-<figure>
-<img src="img/plot1.png">
-<figcaption>Hasil plotting menggunakan fungsi plot R</figcaption>
-</figure>
+![hasil plot](./plotR2.png "Hasil plotting menggunakan fungsi plot R")
 
 Plot di atas dapat disederhanakan dengan perintah berikut:
 ```R
@@ -79,10 +76,7 @@ ggplot(dutchboys1, aes(x=age, y=hc)) +
 ```
 Output:
 
-<figure>
-<img src="./random_observations.png">
-<figcaption>Hasil plotting 1000 sampel menggunakan ggplot2</figcaption>
-</figure>
+![hasil plotting 1000 obs](./random_observations.png "hasil plotting 1000 data")
 
 atau dengan fungsi plot R berikut:
 ```R
@@ -94,10 +88,7 @@ title("sebaran 1000 random data")
 ```
 output:
 
-<figure>
-<img src="./plotR2.png" alt="">
-<figcaption>Hasil plotting 1000 samppel menggunakan fungsi R</figcaption>  
-</figure>
+![plot 1000 data](./plotR2.png "plotting 1000 data")
 
 Berikut adalah perintah untuk membuat kurva pertumbuhan menggunakan fungsi lms:
 ```R
@@ -163,10 +154,7 @@ ditribusi paling baik   : BCTo (GAIC k=3)
 ```
 Output kurva percentile:
 
-<figure>
-<img src="/centile_curve_BCTo.JPG">
-<figcaption>Output kurva percentile dengan metode lms</figcaption>
-</figure>
+![centile curve](./centile_curve_BCTo.JPG "centile curve BCTo")
 
 Berdasarkan output di atas, mengacu pada GAIC(3) adalah BCTo.
 Distribusi terbaik, berdasarkan GAIC(κ=2), menggunakan`m0$family`adalah BCCGo. Model `m0` dapat difit secara langsung dengan perintah berikut:
