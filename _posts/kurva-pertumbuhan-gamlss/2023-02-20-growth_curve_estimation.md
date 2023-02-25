@@ -54,10 +54,7 @@ ggplot(dutchboys, aes(x=age, y=hc)) +
 ```
 Pastikan hasil plotting seperti gambar berikut:
 
-<figure>
-  <img src = "./img/dutchboys_plot.jpg" />
-  <figcaption>Hasil plotting menggunakan ggplot2</figcaption>
-</figure>
+![dutchboys plotting](https://oktavianuu.github.io/kurva-pertumbuhan-gamlss/dutchboys_plot.jpg)
 
 atau dapat juga menggunakan fungsi R berikut:
 ```R

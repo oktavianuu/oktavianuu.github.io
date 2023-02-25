@@ -69,7 +69,6 @@ sass:
 include:
   - _redirects
   - .htaccess
-  - _img
 
 exclude:
   - CNAME
