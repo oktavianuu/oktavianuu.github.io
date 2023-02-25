@@ -53,7 +53,7 @@ ggplot(dutchboys, aes(x=age, y=hc)) +
 ```
 Pastikan hasil plotting seperti gambar berikut:
 
-![dutchboys plotting](https://github.com/oktavianuu/oktavianuu.github.io/blob/main/_posts/kurva-pertumbuhan-gamlss/dutchboys_plot.jpg)
+![dutchboys plotting](https://github.com/oktavianuu/oktavianuu.github.io/assets/img/dutchboys_plot.jpg "Hasil plotting dataset menggunakan ggplot2")
 
 atau dapat juga menggunakan fungsi R berikut:
 ```R
