@@ -4,7 +4,6 @@ date: 2023-02-21 16:22:47 +07:00
 modified: 2023-02-23 13:23:00 +07:00
 tags: [R, statistics]
 description:
-image: assets/img/dutchboys_plot.png
 ---
 
 <em>Centile estimation</em> mencakup metode untuk memprediksi pertumbuhan manusia terhadap usia. Estimasi standar kurva <em>centile</em> terdiri dua variabel:
@@ -54,7 +53,7 @@ ggplot(dutchboys, aes(x=age, y=hc)) +
 ```
 Pastikan hasil plotting seperti gambar berikut:
 
-![dutchboys plotting](https://oktavianuu.github.io/kurva-pertumbuhan-gamlss/dutchboys_plot.jpg)
+![dutchboys plotting](https://github.com/oktavianuu/oktavianuu.github.io/blob/main/_posts/kurva-pertumbuhan-gamlss/dutchboys_plot.jpg)
 
 atau dapat juga menggunakan fungsi R berikut:
 ```R
