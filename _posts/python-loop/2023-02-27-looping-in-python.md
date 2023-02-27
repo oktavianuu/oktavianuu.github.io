@@ -92,9 +92,5 @@ Kode di atas akan melewati ```i == "x"``` yang berarti bahwa huruf x tidak akan 
 ```
 pypypy
 ```
-
-
-
-
-
-
+Konsep "loop" dalam pemrograman sangatlah penting. Dengan ```loop``` kita dapat melakukan iterasi pada banyak data tanpa menulis kode yang sama berkali-kali. Lantas kapan kita harus menggunakan loop?
+* Bayangkan situasi dimana kita harus mengolah data berukuran besar. Apabila kita mengolah data tersebut sekaligus maka akan membutuhkan daya komputasi yang besar oleh karena itu akan lebih baik jika kita membagi data menjadi beberapa <em>batch</em>. Dengan menggunakan ```while``` atau ```for``` loop, kita dapat mengecek data secara efisien. 
