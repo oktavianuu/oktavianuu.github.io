@@ -17,9 +17,17 @@ while True:
 ```
 Implementasi ```while``` loop dapat dilihat pada contoh berikut:
 ```python
-jumlah = 5
+i = 5
 while jumlah > 0:
-    print(jumlah)
-    jumlah -= 1
+    print("nilai i sekarang adalah", i)
+    i -= 1
 ```
-Kode di atas adalah contoh sederhana penggunaan ```while``` loop
+Kode di atas adalah contoh sederhana penggunaan ```while``` loop di python. Kode tersebut dapat kita terjemahkan secara sederhana bahwa kode ```print(jumlah)``` dan ```jumlah -= 1``` akan dieksekusi secara berulang selama kondisi ```jumlah > 0``` masih terpenuhi sehingga ketika jumlah nilainya sama dengan atau lebih kecil dari 0 maka kode akan berhenti. Jika kode tersebut kita eksekusi, maka output berikut akan muncul:
+```
+nilai i sekarang adalah 5
+nilai i sekarang adalah 4
+nilai i sekarang adalah 3
+nilai i sekarang adalah 2
+nilai i sekarang adalah 1
+```
+
