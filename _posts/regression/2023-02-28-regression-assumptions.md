@@ -7,10 +7,102 @@ image:
 ---
 Regresi adalah salah satu model statistik yang digunakan untuk memprediksi satu variabel berdasarkan variabel lain. Esensi dari regresi adalah memasukan sebuah model ke data set yang sedang kita kerjakan untuk memprediksi nilai dari variabel terikat (y) dari satu atau lebih variabel bebas (x). Analisis regresi adalah cara untuk memprediksi nilai variabel terikat berdasarkan satu variabel prediktor (sederhana) atau beberapa variabel prediktor (berganda). Analisis regresi sangat bermanfaat karena dapat membantu kita untuk melihat/memaknai data lebih dalam. 
 
-Sebelum melakukan analisis regresi linear, terdapat beberapa asumsi yang harus terpenuhi agar model regresi dapat menginterpretasikan data dengan tepat. Linear regresi memberikan kelebihan dari algoritma regresi lainnya dilihat dari segi kesederhanaannya, kecepatan dalam <em>training</em> data sehingga menjadikannya cocok untuk digunakan untuk kasus-kasus regresi yang umum ditemukan. 
+Sebelum melakukan analisis regresi linear, terdapat beberapa asumsi yang harus terpenuhi agar model regresi dapat menginterpretasikan data dengan tepat. Linear regresi memberikan kelebihan dari algoritma regresi lainnya dilihat dari segi kesederhanaannya, kecepatan dalam <em>training</em> data sehingga menjadikannya cocok untuk digunakan untuk kasus-kasus regresi yang umum ditemukan. Terdapat lima asumsi yang harus dan wajib terpenuhi dalam regresi linear yaitu:
+1. Linearitas
+2. Normalitas
+3. Multikolinearitas
+4. Autokorelasi
+5. Homoskedastisitas
 
-Tulisan ini menjelaskan uji asumsi-asumsi yang harus terpenuhi dalam regresi linear menggunankan python. Pengujian menggunakan R dapat dilihat pada file lampiran di akhir postingan ini. 
+Tulisan ini menjelaskan uji asumsi-asumsi yang harus terpenuhi dalam regresi linear menggunankan python. 
+Pengujian menggunakan R dapat dilihat pada file lampiran di akhir postingan ini. 
 
+Untuk memudahkan pengujian, kita menggunakan beberapa library yaitu ```numpy, pandas, matplotlib, seaborn dan sklearn.``` Tutorial ini dapat dilakukan menggunakan Jupyter Notebook atau IPython. 
+
+##### Mendownload dan memasukan data
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn import datasets
+%matplotlib inline
+
+"""
+Kita menggunakan data perumahan Boston,
+Dokumentasi lengkap data ini dapat diakses pada alamat https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html
+
+Attributes:
+data: Features/predictors
+label: Target/label/response variable
+feature_names: Abbreviations of names of features
+"""
+data_boston = datasets.load_boston()
+
+"""
+Artificial linear data using the same number of features and observations as the
+Boston housing prices dataset for assumption test comparison
+"""
+linear_X, linear_y = datasets.make_regressin(n_samples=boston.data.shape[0], n_features=boston.data.shape[1], noise=75, random_state=46)
+
+# Setting feature names to x1, x2, x3, etc. if they are not defined
+linear_feature_names = ['X'+str(feature+1) for feature in range(linear_X.shape[1])]
+```
+Setelah data dimasukkan, kita dapat melihat/ <em>mempreview</em> data menggunakan <em>script</em> berikut:
+```python
+df = pd.DataFrame(boston.data, columns=boston.feature_names)
+df['HousePrice] = boston.target
+
+df.head()
+```
+Script di atas akan menampilkan lima baris data pertama. 
+
+##### Initial Setup
+Sebelum menguji kelima asumsi regresi linear, kita harus <em>mem-fit</em> model regresi linear terlebih dahulu. Beberapa uji akan menggunakan residual, jadi kita juga harus membuat fungsi untuk menghitung residual. 
+```python
+from sklearn.linear_model import LinearRegression
+
+# memfitting model
+boston_model = LinearRegression()
+boston_model.fit(boston_data, boston_target)
+
+# Menghitung R^2 model
+boston_r2 = boston_model.score(boston_data, boston_target)
+print('R^2: {0}'.format(boston_r2))
+```
+
+output: 
+```python 
+R^2: 0.7406077428649428
+```
+Kemudian kita harus <em>memfitting</em> model:
+```python
+# Fitting the model
+linear_model = LinearRegression()
+linear_model.fit(linear_X, linear_y)
+
+# menghitung R^2 untuk model
+linear_r2 = linear_model.score(linear_X, linear_y)
+print('R^2: {0}'.format(linear_r2))
+```
+output:
+```python 
+R^2: 0.873743725796525
+```
+Kemudian kita hitung residual dengan membuat fungsi berikut:
+```python
+def calculate_residuals(model, features, label):
+    """
+    Creates predictions on the features with the model and calculates residuals
+    """
+    predictions = model.predict(features)
+    df_results = pd.DataFrame({'Actual': label, 'Predicted': predictions})
+    df_results['Residuals'] = abs(df_results['Actual']) - abs(df_results['Predicted'])
+    
+    return df_results
+```
+
+### Lanjutin besok
 
 ```python
 def linear_regression_assumptions(features, label, feature_names=None):
