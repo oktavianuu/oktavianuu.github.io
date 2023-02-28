@@ -5,6 +5,13 @@ modified:
 description:
 image:
 ---
+Regresi adalah salah satu model statistik yang digunakan untuk memprediksi satu variabel berdasarkan variabel lain. Esensi dari regresi adalah memasukan sebuah model ke data set yang sedang kita kerjakan untuk memprediksi nilai dari variabel terikat (y) dari satu atau lebih variabel bebas (x). Analisis regresi adalah cara untuk memprediksi nilai variabel terikat berdasarkan satu variabel prediktor (sederhana) atau beberapa variabel prediktor (berganda). Analisis regresi sangat bermanfaat karena dapat membantu kita untuk melihat/memaknai data lebih dalam. 
+
+Sebelum melakukan analisis regresi linear, terdapat beberapa asumsi yang harus terpenuhi agar model regresi dapat menginterpretasikan data dengan tepat. Linear regresi memberikan kelebihan dari algoritma regresi lainnya dilihat dari segi kesederhanaannya, kecepatan dalam <em>training</em> data sehingga menjadikannya cocok untuk digunakan untuk kasus-kasus regresi yang umum ditemukan. 
+
+Tulisan ini menjelaskan uji asumsi-asumsi yang harus terpenuhi dalam regresi linear menggunankan python. Pengujian menggunakan R dapat dilihat pada file lampiran di akhir postingan ini. 
+
+
 ```python
 def linear_regression_assumptions(features, label, feature_names=None):
     """
