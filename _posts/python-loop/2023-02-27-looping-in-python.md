@@ -94,3 +94,31 @@ pypypy
 ```
 Konsep "loop" dalam pemrograman sangatlah penting. Dengan ```loop``` kita dapat melakukan iterasi pada banyak data tanpa menulis kode yang sama berkali-kali. Lantas kapan kita harus menggunakan loop?
 Bayangkan situasi dimana kita harus mengolah data berukuran besar. Apabila kita mengolah data tersebut sekaligus maka akan membutuhkan daya komputasi yang besar oleh karena itu akan lebih baik jika kita membagi data menjadi beberapa <em>batch</em>. Dengan menggunakan ```while``` atau ```for``` loop, kita dapat mengecek data secara efisien. 
+
+Berikut ini adalah contoh lain penggunaan <em>loop</em> dalam pemrograman:
+```python
+nomor = [102, 137, 468, 223, 757]
+total = 0
+
+for i in nomor:
+    total += i
+print(total)
+```
+Kode di atas merupakan contoh penggunaan konsep <em>loop</em> untuk menghitung total angka di dalam list bernama nomor. Kode di atas akan menhasilkan output berikut:
+```1687```
+
+Contoh berikut akan sedikit lebih kompleks. Bayangkan kita memiliki list nomor berikut:
+```nomor = [10, 2, 8, 5, 7]```
+Kita ditugaskan untuk menukar posisi 10 dan 2 ke posisi 5 dan 7 serta sebaliknya. Kita dapat mengimplementasikan ```for``` untuk mencapai tujuan tersebut:
+```python
+nomor = [10, 2, 8, 5, 7]
+panjang_nomor = len(nomor)
+
+for i in range(panjang_nomor // 2):
+    nomor[i], nomor[panjang_nomor-i-1] = nomor[panjang_nomor-i-1], nomor[i]
+print(nomor)
+```
+Kode di atas akan menghasilkan ```[7, 5, 8, 2, 10]```. Kode di atas dapat kita terjemahkan sebagai berikut:
+* Panjang_nomor adalah variabel yang kita gunakan untuk menyimpan panjang list nomor, dengan kata lain jumlah element yang ada pada list <em>nomor</em>.
+* Kemudian kita menggunakan ```for``` untuk melakukan iterasi pada ```panjang_nomor // 2```. 
+* Kemudian kita menukar elemen ke-i (dari awal list) dengan elemen lain yang berlokasi di ```panjang_nomor - i - 1``` (berlokasi di akhir list). Berdasarkan contoh di atas,  untuk i = 0, ```panjang_nomor - i - 1``` adalah 4, untuk i = 1 adalah 3. 
