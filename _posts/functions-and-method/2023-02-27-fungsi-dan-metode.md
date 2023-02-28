@@ -1,5 +1,5 @@
 ---
-title: fungsi dan metode dalam pemrograman
+title: Function and Method in Programming
 date: 2023-02-27 19:19:00 +07:00
 modified: 
 tags: [programming, fungsi, metode, python]
