@@ -16,8 +16,7 @@ Sebelum melakukan analisis regresi linear, terdapat beberapa asumsi yang harus t
 
 
 Tulisan ini menjelaskan uji asumsi-asumsi yang harus terpenuhi dalam regresi linear menggunankan python. 
-Data yang digunakan dapat didownload [disini](https://docs.google.com/spreadsheets/d/1gB3bxCaZiEfT9yozqFaLC-vQKICfkuOR/edit?usp=sharing&ouid=113871522222072694770&rtpof=true&sd=true).
-Tutorial regresi linier menggunakan R dapat didownload [disini](https://drive.google.com/file/d/1A6mIc2zECq1dAnUVZPD6R29viZb3soH_/view?usp=sharing).
+Data dan uji regresi linier menggunakan R dapat didownload di lampiran pada bagian akhir postingan ini.
 
 Untuk memudahkan pengujian, kita menggunakan beberapa library yaitu ```numpy, pandas, matplotlib, seaborn dan sklearn.``` Tutorial ini dapat dilakukan menggunakan Jupyter Notebook atau IPython. 
 
@@ -103,9 +102,7 @@ def calculate_residuals(model, features, label):
     
     return df_results
 ```
-
-### Lanjutin besok
-https://jeffmacaluso.github.io/post/LinearRegressionAssumptions/
+Uji asumsi regresi linier
 
 ```python
 def linear_regression_assumptions(features, label, feature_names=None):
@@ -318,3 +315,6 @@ def linear_regression_assumptions(features, label, feature_names=None):
     autocorrelation_assumption()
     homoscedasticity_assumption()
 ```
+
+Data yang digunakan dapat didownload [disini](https://docs.google.com/spreadsheets/d/1gB3bxCaZiEfT9yozqFaLC-vQKICfkuOR/edit?usp=sharing&ouid=113871522222072694770&rtpof=true&sd=true).
+Tutorial regresi linier menggunakan R dapat didownload [disini](https://drive.google.com/file/d/1A6mIc2zECq1dAnUVZPD6R29viZb3soH_/view?usp=sharing).
