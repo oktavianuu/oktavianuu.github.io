@@ -10,12 +10,14 @@ Regresi adalah salah satu model statistik yang digunakan untuk memprediksi satu 
 Sebelum melakukan analisis regresi linear, terdapat beberapa asumsi yang harus terpenuhi agar model regresi dapat menginterpretasikan data dengan tepat. Linear regresi memberikan kelebihan dari algoritma regresi lainnya dilihat dari segi kesederhanaannya, kecepatan dalam <em>training</em> data sehingga menjadikannya cocok untuk digunakan untuk kasus-kasus regresi yang umum ditemukan. Terdapat lima asumsi yang harus dan wajib terpenuhi dalam regresi linear yaitu:
 1. Linearitas
 2. Normalitas
-3. Multikolinearitas
+3. Homoskedastisitas
 4. Autokorelasi
-5. Homoskedastisitas
+5. Multikolinearitas
+
 
 Tulisan ini menjelaskan uji asumsi-asumsi yang harus terpenuhi dalam regresi linear menggunankan python. 
-Pengujian menggunakan R dapat dilihat pada file lampiran di akhir postingan ini. 
+Data yang digunakan dapat didownload [disini](https://docs.google.com/spreadsheets/d/1gB3bxCaZiEfT9yozqFaLC-vQKICfkuOR/edit?usp=sharing&ouid=113871522222072694770&rtpof=true&sd=true).
+Tutorial regresi linier menggunakan R dapat didownload [disini](https://drive.google.com/file/d/1A6mIc2zECq1dAnUVZPD6R29viZb3soH_/view?usp=sharing).
 
 Untuk memudahkan pengujian, kita menggunakan beberapa library yaitu ```numpy, pandas, matplotlib, seaborn dan sklearn.``` Tutorial ini dapat dilakukan menggunakan Jupyter Notebook atau IPython. 
 
@@ -103,6 +105,7 @@ def calculate_residuals(model, features, label):
 ```
 
 ### Lanjutin besok
+https://jeffmacaluso.github.io/post/LinearRegressionAssumptions/
 
 ```python
 def linear_regression_assumptions(features, label, feature_names=None):
