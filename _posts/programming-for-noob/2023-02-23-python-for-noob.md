@@ -6,5 +6,3 @@ tags: [programming, python]
 description:
 image: 
 ---
-
-this post is being proccessed ...
