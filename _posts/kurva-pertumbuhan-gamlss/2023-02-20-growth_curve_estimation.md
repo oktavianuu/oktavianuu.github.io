@@ -1,9 +1,9 @@
 ---
-title: Centile Estimation dengan GAMLSS
+title: Centile Estimation with GAMLSS
 date: 2023-02-21 16:22:47 +07:00
-modified: 2023-02-23 13:23:00 +07:00
+modified: 2023-06-10 20:23:46 +07:00
 tags: [R, statistics]
-description:
+description: Centile growth estimation using R and GAMLSS
 ---
 
 <em>Centile estimation</em> mencakup metode untuk memprediksi pertumbuhan manusia terhadap usia. Estimasi standar kurva <em>centile</em> terdiri dua variabel:

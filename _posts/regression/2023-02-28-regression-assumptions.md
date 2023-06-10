@@ -1,8 +1,8 @@
 ---
-title: Asumsi-asumsi Regresi Linier
+title: Linear Regression
 date: 2023-02-27 18:50:00 +07:00
-modified: 
-description:
+modified: 2023-06-10 20:43:00 +07:00
+description: Linear regression analysis using R
 image:
 ---
 Regresi adalah salah satu model statistik yang digunakan untuk memprediksi satu variabel berdasarkan variabel lain. Esensi dari regresi adalah memasukan sebuah model ke data set yang sedang kita kerjakan untuk memprediksi nilai dari variabel terikat (y) dari satu atau lebih variabel bebas (x). Analisis regresi adalah cara untuk memprediksi nilai variabel terikat berdasarkan satu variabel prediktor (sederhana) atau beberapa variabel prediktor (berganda). Analisis regresi sangat bermanfaat karena dapat membantu kita untuk melihat/memaknai data lebih dalam. 
