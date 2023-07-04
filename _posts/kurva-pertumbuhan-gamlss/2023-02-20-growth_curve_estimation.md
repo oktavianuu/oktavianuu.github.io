@@ -51,17 +51,10 @@ ggplot(dutchboys, aes(x=age, y=hc)) +
   xlab("age") + ylab("head circumference") +
   theme_bw()
 ```
-Pastikan hasil plotting seperti gambar berikut:
-
-![dutchboys plotting](./dutchboys_plot.jpg "Hasil plotting dataset menggunakan ggplot2")
-
 atau dapat juga menggunakan fungsi R berikut:
 ```R
 plot(hc~age, data=dutchboys, pch=15, cex=0.5, col=gray(0.5), xlab='x', ylab='y') + title('sebaran 6848 data')
 ```
-output:
-
-![hasil plot](./plotR2.png "Hasil plotting menggunakan fungsi plot R")
 
 Plot di atas dapat disederhanakan dengan perintah berikut:
 ```R
@@ -74,10 +67,6 @@ ggplot(dutchboys1, aes(x=age, y=hc)) +
   xlab("age") + ylab("head circumference") +
   theme_bw()
 ```
-Output:
-
-![hasil plotting 1000 obs](./random_observations.png "hasil plotting 1000 data")
-
 atau dengan fungsi plot R berikut:
 ```R
 set.seed(080320)
@@ -86,9 +75,6 @@ dutchboys1 <- dutchboys[IND,]
 plot(hc~age, data=dutchboys1, pch = 15, cex = 0.5, col = gray(0.5), xlab='x', ylab='y')
 title("sebaran 1000 random data")
 ```
-output:
-
-![plot 1000 data](./plotR2.png "plotting 1000 data")
 
 Berikut adalah perintah untuk membuat kurva pertumbuhan menggunakan fungsi lms:
 ```R
