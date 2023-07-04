@@ -138,9 +138,6 @@ PENTING:
 power of transformation : 0.3805277
 ditribusi paling baik   : BCTo (GAIC k=3)
 ```
-Output kurva percentile:
-
-![centile curve](./centile_curve_BCTo.JPG "centile curve BCTo")
 
 Berdasarkan output di atas, mengacu pada GAIC(3) adalah BCTo.
 Distribusi terbaik, berdasarkan GAIC(κ=2), menggunakan`m0$family`adalah BCCGo. Model `m0` dapat difit secara langsung dengan perintah berikut:
