@@ -331,6 +331,7 @@ wp(m0, xvar=dutchboys$age, n.inter=9)
 centiles(m0)
 ```
 
+Versi lengkap tutorial ini dapat didownload melalui link berikut:
 
 <hr>
 
