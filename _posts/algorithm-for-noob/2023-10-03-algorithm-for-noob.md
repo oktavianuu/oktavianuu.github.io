@@ -7,7 +7,4 @@ description: Explaining algorithm to you.
 image: "/algorithm-for-noob/repo.png"
 ---
 
-<figure>
-<img src="/algorithm-for-noob/repoi.png" alt="repo">
-<figcaption>Fig 1. Terminal emulator, instalasi package dan check service.<figcaption>
-</figure>
+![repo](repo.png)
