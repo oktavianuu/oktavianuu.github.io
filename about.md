@@ -9,4 +9,4 @@ comments: true
 
 **may u needs ✨**
 
-- {{ site.author.email }}
+- {{ site.author.gmail }}
