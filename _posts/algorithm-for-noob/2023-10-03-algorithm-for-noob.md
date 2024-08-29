@@ -6,5 +6,3 @@ tags: [algoritm]
 description: Explaining algorithm to you.
 image: "/algorithm-for-noob/repo.png"
 ---
-
-![repo](repo.png)
