@@ -12,8 +12,8 @@ description:
 ## What is Algorithm?
 Simply, algorithm is a procedure to accomplish a specific task. It solves general, _well-specified_ problem. To make it clear, consider the following problem known as sorting:
 
-_Problem_: Sorting
-_Input_: A sequence S of n keys $$a_1, . . . , a_n$$. 
+_Problem_: Sorting<br>
+_Input_: A sequence S of n keys $$a_1, . . . , a_n$$.<br> 
 _Output_: The permutation (reordering) of the input sequence such that $$a'_1 \geq a'_2 \geq . . . \geq a'_{n-1} \geq a'_n$$.
 
 In _sorting_ problem, the instance of a problem might be an array of strings or numbers e.g. [97, 63, 134, 207, 194, 150]. So, to be specific, an algorithm is a procedure that takes any possible input of instances and transforms it to the desired result or output. If you google or ask any sophisticated AI chat-based application about how to solve a sorting problem, there are many different algorithms to solve _sorting_  problem, one of them is **insertion sort**. It is an algorithm that works by interatively inserting each element of an unsorted list into its correct position in a sorted portion of a list. It is much less effiecient on largest list compared to other advanced algorithms such as _quicksort, heapsort_, or _merge sort_.
