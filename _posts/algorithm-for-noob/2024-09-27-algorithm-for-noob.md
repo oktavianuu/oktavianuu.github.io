@@ -30,7 +30,7 @@ procedure insertion_sort(list, n)
 end procedure
 ```
 Low-Level Pseudo Code:
-```arduino
+```C
 procedure insertion_sort(s, n)
     for i from 1 to n-1 do
         j = i
