@@ -16,9 +16,14 @@ _Problem_: Sorting<br>
 _Input_: A sequence S of n keys $$a_1, . . . , a_n$$.<br> 
 _Output_: The permutation (reordering) of the input sequence such that $$a'_1 \geq a'_2 \geq . . . \geq a'_{n-1} \geq a'_n$$.
 
-In _sorting_ problem, the instance of a problem might be an array of strings or numbers e.g. `[97, 63, 134, 207, 194, 150]`. So, to be specific, an algorithm is a procedure that takes any possible input of instances and transforms it to the desired result or output. If you google or ask any sophisticated AI chat-based application about how to solve a sorting problem, there are many different algorithms to solve _sorting_  problem, one of them is **insertion sort**. It is an algorithm that works by interatively inserting each element of an unsorted list into its correct position in a sorted portion of a list. It is much less effiecient on largest list compared to other advanced algorithms such as _quicksort, heapsort_, or _merge sort_.
-The implementation of _insertion sort_ can be seen as follow:
+In _sorting_ problem, the instance of a problem might be an array of strings or numbers e.g. `[97, 63, 134, 207, 194, 150]`. So, to be specific, an algorithm is a procedure that takes any possible input of instances and transforms it to the desired result or output. If you google or ask any sophisticated AI chat-based application about how to solve a sorting problem, there are many different algorithms to solve _sorting_  problem, one of them is **insertion sort**. It is an algorithm that works by interatively inserting each element of an unsorted list into its correct position in a sorted portion of a list. It is much less effiecient on largest list compared to other advanced algorithms such as _quicksort, heapsort_, or _merge sort_, but advanced algorithms aren't needed for starters. What is important is the basic principle of it. After all you might wonder what is algorithm looks like. Since algorithm is a procedure, it must be looked a process to achieve something. Step by step and clear. It is more like _how to do_ something **correctly** and **efficiently**. Now back to the _insertion sort_ again, how do we sort an array of elements or number from the smallest to the largest? We just need to compare each element and sort them. Programmatically we can sort a list of number with the following procedure:
+list of number need to be sorted = `97, 63, 134, 207, 194, 150`
+1. Compare the second element with the previous element,
+2. Place the smaller element at the first index of the list,
+3. Compare the the next elements to the previous element,
+4. If the preceding element is bigger, shift its position.
 
+Now we need to translate our way of sorting list into pseudo-code as follows:
 Abstract Pseudo Code:
 ```sql
 procedure insertion_sort(list, n)
@@ -29,6 +34,8 @@ procedure insertion_sort(list, n)
     end for
 end procedure
 ```
+In the pseudo code above, we name our procedure as `insertion_sort`. Inside the procedure, the comparing and shifting processess are done iteratively until all elements reordered ascendingly. Here, the algorithm is written with high level of abstraction so that it will be easy for any human to understand it. It focuses on what the algorithm does rather than how it does it. This pseudo-code is useful for high-level understanding, focusing on the concept without specifying the details of the comparison and swapping process. Since we are going to make our computer understand the algorithm, we still need to translate it to a lower level of abstraction so that it will be close to its actual implementation.
+
 Low-Level Pseudo Code:
 ```c
 procedure insertion_sort(s, n)
@@ -41,8 +48,19 @@ procedure insertion_sort(s, n)
     end for
 end procedure
 ```
+This version is more detailed and clearly descibes how the algorithm works step by step, making it closer to its actual implementation. Here is how it works:
+- The name our procedure is `insertion_sort`,
+- `For i from 1 to n-1`: This shows that the outer loop starts from the second element (index 1) and iterates through the entire list,
+- `j = i`: This indicates the current element to be sorted, starting with index i.
+- `While j > 0 and s[j] < s[j-1]`: This condition compares the current element `s[j]` with the previous element `s[j-1]`. If the current element is smaller, the while loop continues swapping it with previous elements to insert it into the correct position.
+`swap(s[j], s[j-1])`: This is the concrete operation that moves elements to the right by swapping. We hide the details how this function works.
+- `j = j - 1`: After a swap, j is decremented, moving the comparison to the previous element.
 
-Implemented in C:
+This version breaks down the process of sorting, showing explicitly the comparison, the swapping, and how the elements are moved one by one.
+
+Now it is time for us to implement our pseudo code insertion sort to a computer language, in this case C. 
+
+Insertion sort implemented in C:
 ```c
 insertion_sort(item s[], int n)
 {
@@ -57,6 +75,6 @@ insertion_sort(item s[], int n)
     }
 }
 ```
-We can ignore the details about the C language here as it is not the main intention of this writing to learn a programing language. The code shows how to implement insertion sort in C.
+That is how algorithm works and how we create it from scratch. We can ignore the details about the C language here as it is not the main intention of this writing to learn a programing language. The code shows how to implement insertion sort in C.
 
-When we think about algorithm, what comes to mind is "**what makes an algorithm good?**" There are three properties of a good algorithm, they are _correctness_, _effectiveness_ and _easiness_ of its implementation. 
+When we think about algorithm, what comes to mind is "**what makes an algorithm good?**" There are three properties of a good algorithm, they are _correctness_, _effectiveness_ and _easiness_ of its implementation. We'll talk about it soon but not now. 
