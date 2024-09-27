@@ -31,4 +31,3 @@ insertion_sort(item s[], int n)
 We can ignore the details about the C language here as it is not the main intention of this writing to learn a programing language. The code shows how to implement insertion sort in C.
 
 When we think about algorithm, what comes to mind is "**what makes an algorithm good?**" There are three properties of a good algorithm, they are _correctness_, _effectiveness_ and _easiness_ of its implementation. 
-
