@@ -31,14 +31,15 @@ end procedure
 ```
 Low-Level Pseudo Code:
 ```arduino
-procedure insertion_sort(list, n)
-    for each element from the second to the last in list do
-        compare element with the previous elements
-        shift elements to the right until the correct position is found
-        insert element in the correct position
+procedure insertion_sort(s, n)
+    for i from 1 to n-1 do
+        j = i
+        while j > 0 and s[j] < s[j-1] do
+            swap(s[j], s[j-1])
+            j = j - 1
+        end while
     end for
 end procedure
-
 ```
 
 Implemented in C:
