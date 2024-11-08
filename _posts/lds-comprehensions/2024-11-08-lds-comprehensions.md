@@ -67,9 +67,11 @@ sequences = [
     "TAGCGTACGTAG"
 ]
 ```
+
 #### Solution
+
 1. **Filter Sequences by Pattern**
-   
+
 ```python
 pattern = 'ATG`
 filtered_sequences = [seq for seq in sequences if pattern in seq]
