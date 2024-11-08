@@ -69,12 +69,15 @@ sequences = [
 ```
 #### Solution
 1. **Filter Sequences by Pattern**
+   
 ```python
 pattern = 'ATG`
 filtered_sequences = [seq for seq in sequences if pattern in seq]
 print(filtered_sequences)
 ```
-2. **Calculate `GC` Content**
+
+1. **Calculate `GC` Content**
+
 ```python
 def gc_content(sequence):
     gc_count = sequence.count('G') + sequence.count('C')
@@ -83,7 +86,9 @@ def gc_content(sequence):
 gc_contents = [gc_content(seq) for seq in filtered_sequences]
 print(gc_contents)
 ```
+
 #### Full solution
+
 ```python
 # List of DNA sequences
 sequences = [
@@ -122,7 +127,7 @@ gc_contents = [gc_content(seq) for seq in sequences if pattern in seq]
 
 print(gc_contents)
 ```
+
 **Explanation:**
 1. Filtering Sequences: The list comprehension `[seq for seq in sequences if pattern in seq]` filters the sequences to include only those that contain the pattern `"ATG"`.
 2. Calculating GC Content: The list comprehension `[gc_content(seq) for seq in filtered_sequences]` calculates the GC content for each filtered sequence using the gc_content function.
-
