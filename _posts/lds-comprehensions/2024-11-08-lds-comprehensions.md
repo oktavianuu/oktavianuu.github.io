@@ -39,8 +39,8 @@ Everytime we apply list comprehension, the rules are the same. The only differen
 ___
 ### Problem: The Case of DNA Sequence Analysis
 Imagine that we're hired to work on DNA Sequence Analysis. Suppose we have a list of DNA sequences, and we're tasked to identify sequences that have a specific pattern and then calculate the `GC` content (_percentage of 'G' and 'C' nucleotides_) for those sequences. The _GC_ content is an important measure in genetics and molecular biology because regions with high `GC` content are often more stable and have different properties compared to regions with low `GC` content. To solve this problem, we first must define problem solving process:
-1) **Filter the sequence by pattern**, identify sequences that contain a specific pattern, such as "ATG".
-2) **Calculate `GC` content**, for the filtered sequences, calculate the GC content.
+1. **Filter the sequence by pattern**, identify sequences that contain a specific pattern, such as "ATG".
+2. **Calculate `GC` content**, for the filtered sequences, calculate the GC content.
 
 DNA Sequence data:
 ```
