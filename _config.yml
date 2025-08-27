@@ -1,5 +1,5 @@
 # Site settings
-title: oktavianuu # site title
+title: Mr. Know A Little # site title
 description: >- # site description
   He's writing in Bahasa about web technology and experience as a journal 
   for documentation things that he learned, meet him <a href="https://github.com/piharpi" target="_blank" rel="noopener">@github</a>.
@@ -11,7 +11,7 @@ mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
-  name: Oktavianus Misro Adrianto # author name
+  name: Mr. Know A Little # author name
   bio: >- # tell to the world
    Learning a little about everything.
   username: username # general username
