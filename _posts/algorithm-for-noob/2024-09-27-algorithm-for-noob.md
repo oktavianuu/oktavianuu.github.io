@@ -5,9 +5,6 @@ modified:
 tags: [algorithm]
 description: 
 ---
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 
 ## What is Algorithm?
 Simply, algorithm is a procedure to accomplish a specific task. It solves general, _well-specified_ problem. To make it clear, consider the following problem known as sorting:
